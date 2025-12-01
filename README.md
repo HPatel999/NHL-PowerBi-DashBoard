@@ -1,17 +1,17 @@
 # 🏒 NHL Power BI Dashboard
 
 This project scrapes real-time NHL data and turns it into a dynamic analytics dashboard using **Power BI**. 
-> ⚠️ This project depends on the public [NHL API](https://api-web.nhle.com/v1/). If that API changes or breaks, this project will also break.
+> This project depends on the public [NHL API](https://api-web.nhle.com/v1/). If that API changes or breaks, this project will also break.
 
 ---
 
-## 📣 **Author:** 
+##  **Author:** 
 Developed by **Harsh Patel**  
 If you would like to use this project for your own purposes, please do cite me.  
 If you'd like to contribute — especially by adding advanced stats — feel free to fork the repo and open a pull request!
 
 ---
-## ✅ Features
+## Features
 
 - Up-to-date NHL team standings
 - Advanced team metrics (power play %, goals by period, faceoffs)
@@ -21,7 +21,7 @@ If you'd like to contribute — especially by adding advanced stats — feel fre
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Home Dashboard | Team Page | Player Drillthrough (Skater View) | Player Drillthrough (Goalie View)|
 |----------------|-----------|----------------------|----------------|
@@ -30,7 +30,7 @@ If you'd like to contribute — especially by adding advanced stats — feel fre
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 nhl_powerbi_project/
@@ -46,7 +46,7 @@ README.md                   # This file
 
 ---
 
-## 🧰 Installation
+## Installation
 
 1. Make sure you have Python 3.8+ installed.
 2. Install required packages:
@@ -57,7 +57,7 @@ pip install pandas requests urllib3
 
 ---
 
-## 🔁 Season ID Handling
+##  Season ID Handling
 
 The NHL API uses **season IDs** (e.g., `"20242025"` for 2024–25).  
 Due to offseason limitations, this project uses **two IDs**:
@@ -76,7 +76,7 @@ SEASON_ID_OFFSEASON = "20242025"   # For season stats (power play %, etc.)
 
 ---
 
-## 🚀 How to Use This Project
+##  How to Use This Project
 
 ### 1. Clone the repository
 
@@ -95,7 +95,7 @@ This will call the NHL API and save updated data to the `data/` folder:
 python main.py
 ```
 
-🟢 This will generate or overwrite:
+This will generate or overwrite:
 - `teams.csv`
 - `rosters.csv`
 - `player_stats.csv`
@@ -121,7 +121,7 @@ The report uses a parameter (`BasePath`) to load CSV files from your local file 
 C:\Users\YourName\Documents\nhl_powerbi_project\data\
 ```
 
-> ✅ Make sure it ends with a backslash (`\`)
+>  Make sure it ends with a backslash (`\`)
 
 3. Click **Close & Apply**
 
@@ -129,13 +129,13 @@ C:\Users\YourName\Documents\nhl_powerbi_project\data\
 
 ### 5. Refresh and explore
 
-- ✅ All visuals should now load
-- 🧠 Drill through team logos to see player tables (need to select a team before Ctrl + Clicking)
-- 📊 Drill through player names (need to select a player and then right-click to see drillthrough option) to see full individual stats (with position-specific visuals)
+- All visuals should now load
+- Drill through team logos to see player tables (need to select a team before Ctrl + Clicking)
+- Drill through player names (need to select a player and then right-click to see drillthrough option) to see full individual stats (with position-specific visuals)
 
 ---
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 - Data only updates when `main.py` is run manually and you also need to refresh the table in PowerBi pressing the Refresh Button
 - If the NHL API changes or is rate-limited, some requests may fail
@@ -143,7 +143,7 @@ C:\Users\YourName\Documents\nhl_powerbi_project\data\
 
 ---
 
-## 📜 License & Attribution
+##  License & Attribution
 
 - Data and images are provided by the **National Hockey League (NHL)** via their public API:  
   [https://api-web.nhle.com/v1/](https://api-web.nhle.com/v1/)
